@@ -16,14 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * Full SEO Optimized Metadata + Google Verification
+ * SEO + Google Verification for prism-333.vercel.app
  */
 export const metadata: Metadata = {
   metadataBase: new URL("https://prism-333.vercel.app"),
 
-  // Google Search Console verification
   verification: {
-    google: "vN7yQk9k1gvGehqRacxB8vOFkGKgX89B6iD5bqJh1KY",
+    google: "MW96HzBNfcQ8cyZmydTBggDPP7IK3r9tZYpXrXFVmzw",
   },
 
   title: {
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Prism Laundry provides fast, reliable, and professional laundry and dry cleaning services with easy pickup and delivery. Manage your laundry efficiently using our modern web platform.",
+    "Prism Laundry provides fast, reliable, and professional laundry and dry cleaning services with easy pickup and delivery.",
 
   keywords: [
     "Prism Laundry",
@@ -41,10 +40,6 @@ export const metadata: Metadata = {
     "Laundry Pickup",
     "Laundry Delivery",
     "Online Laundry Booking",
-    "Laundry Management System",
-    "Laundry App India",
-    "Prism Laundry Website",
-    "Next.js Laundry App",
   ],
 
   authors: [
@@ -64,25 +59,16 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
 
   openGraph: {
-    title: "Prism Laundry | Online Laundry Service",
-    description:
-      "Professional laundry and dry cleaning service with convenient pickup and delivery.",
+    title: "Prism Laundry",
+    description: "Professional laundry service with pickup and delivery.",
     url: "https://prism-333.vercel.app",
     siteName: "Prism Laundry",
     images: [
       {
-        url: "https://prismlaundry.com/prism.svg",
+        url: "https://prism-333.vercel.app/prism.svg",
         width: 1200,
         height: 630,
         alt: "Prism Laundry",
@@ -94,13 +80,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Prism Laundry | Online Laundry Service",
-    description:
-      "Book laundry pickup and delivery easily with Prism Laundry.",
-    images: ["https://prismlaundry.com/prism.svg"],
+    title: "Prism Laundry",
+    description: "Book laundry pickup and delivery easily.",
+    images: ["https://prism-333.vercel.app/prism.svg"],
   },
-
-  category: "technology",
 };
 
 export default function RootLayout({
@@ -109,24 +92,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        {/* Extra SEO tags */}
         <link rel="canonical" href="https://prism-333.vercel.app" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="application-name" content="Prism Laundry" />
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="light">
           <PageLoader />
           <Toaster position="bottom-right" richColors />
           {children}
