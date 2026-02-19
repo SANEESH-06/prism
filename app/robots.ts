@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://prismlaundry.com/sitemap.xml",
+    sitemap: "https://prism-333.vercel.app/sitemap.xml",
   };
 }
