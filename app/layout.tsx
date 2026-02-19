@@ -16,10 +16,15 @@ const geistMono = Geist_Mono({
 });
 
 /**
- * Full SEO Optimized Metadata
+ * Full SEO Optimized Metadata + Google Verification
  */
 export const metadata: Metadata = {
   metadataBase: new URL("https://prism-333.vercel.app"),
+
+  // Google Search Console verification
+  verification: {
+    google: "vN7yQk9k1gvGehqRacxB8vOFkGKgX89B6iD5bqJh1KY",
+  },
 
   title: {
     default: "Prism Laundry | Online Laundry & Dry Cleaning Service",
@@ -30,7 +35,6 @@ export const metadata: Metadata = {
     "Prism Laundry provides fast, reliable, and professional laundry and dry cleaning services with easy pickup and delivery. Manage your laundry efficiently using our modern web platform.",
 
   keywords: [
-    "prism",
     "Prism Laundry",
     "Laundry Service",
     "Dry Cleaning",
@@ -45,17 +49,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-        name: "Prism",
-      url: "https://prism-333.vercel.app",
-    },
-    {
       name: "Prism Laundry",
       url: "https://prism-333.vercel.app",
     },
   ],
 
   creator: "Prism Laundry",
-
   publisher: "Prism Laundry",
 
   alternates: {
@@ -65,7 +64,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    nocache: false,
     googleBot: {
       index: true,
       follow: true,
