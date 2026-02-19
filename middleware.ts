@@ -18,6 +18,6 @@ export const config = {
      - google verification files
      - all public static files
     */
-    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*|.*\\.(?:png|jpg|jpeg|svg|gif|webp)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|google.*|.*\\.(?:png|jpg|jpeg|svg|gif|webp|html)$).*)",
   ],
 };
