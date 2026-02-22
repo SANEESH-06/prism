@@ -97,6 +97,10 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://prism-333.vercel.app" />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="google-site-verification"
+          content="MW96HzBNfcQ8cyZmydTBggDPP7IK3r9tZYpXrXFVmzw"
+        />
 
         {/* Google Tag Manager Script */}
         <Script
